@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volt-ology</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-32x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo-16x.png">
+    <link href="volt.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+    <nav>
+    <ul>
+        <li><a href="index.html" title="Homepage">Home</a></li>
+        <li><a href="component.html" title="Components">Component Comparisons</a></li>
+        <li><a href="os.html" title="OS">OS Comparisons</a></li>
+        <li><a href="gallery.html" title="gallery">Gallery</a></li>
+        <li><a href="contact.html" title="Contact">Contact Us</a></li>
+    </ul>
+    </nav>
+    <div id="border">
+    <header>
+        <a href="index.html" title="Homepage"><img id="sublogo" src="images/logo.png" alt="lightning bolt"></a>
+    </header>
+    <main>
+        <p>Please enter your information below so we may contact you.
+        or so we can fix an issue<br> 
+        Items marked with an asterisk * are required.</p>
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+            <label for="fname"> *First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Your name..." required>
+            <label for="lname">*Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Your last name..." required>
+            <label for="compname">Company name:</label>
+            <input type="text" name="compname" id="compname" placeholder="Your company name...">
+            <label for="email">*E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Your email..." required>
+            <label for="reason">*Why do you need to contact us?</label>
+            <select name="reason" id="reason">
+            <option>None</option>
+            <option>Error on our site</option>
+            <option>>50 unit order</option>
+            <option>Job inquiry</option>
+            <option>Employee Complaint</option>
+            </select>
+            <label for="description">*Describe your reason for contacting us:</label><br>
+            <textarea name="description" id="description" rows="5" cols="20" required>
+            </textarea>
+            <label for="comments">Other comments:</label><br>
+            <textarea name="comments" id="comments" rows="5" cols="40">
+            </textarea>
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; 2020 Volt-ology<br>
+        <a href="mailto:contact@volt-ology.com">contact@volt-ology.com</a> :: <a href="form.html" title="Contact Form">Contact Form</a>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
